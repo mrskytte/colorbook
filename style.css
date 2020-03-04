@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#svg-container {
+  height: auto;
+  width: 30%;
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+#svg-container.donedrawing {
+  animation: rotateHue 1s ease infinite;
+}
+
+@keyframes rotateHue {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+#Fill_1_ {
+  cursor: crosshair;
+}
+
+p {
+  text-align: center;
+}
+
+#Fill_1_ .st0:hover {
+  stroke: rgb(230, 29, 219);
+  stroke-width: 2px;
+}
+
+#selectedcolor {
+  --selected-color: green;
+  width: 20%;
+  height: 2rem;
+  margin: auto auto 3rem auto;
+  background-color: var(--selected-color);
+}
+
+#colorcontainer {
+  width: 40%;
+  margin: auto;
+  display: grid;
+  grid-row-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.colors {
+  margin: auto;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.colors[data-selected="true"] {
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: all 0.5s;
+}
+
+#color1 {
+  background-color: #d96c80;
+}
+
+#color2 {
+  background-color: #592f3a;
+}
+
+#color3 {
+  background-color: #d94e81;
+}
+
+#color4 {
+  background-color: #f28080;
+}
+
+#color5 {
+  background-color: #d91df2;
+}
+
+#color6 {
+  background-color: #1b0140;
+}
+
+#color7 {
+  background-color: #4417a6;
+}
+
+#color8 {
+  background-color: #1e0126;
+}
